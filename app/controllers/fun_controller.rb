@@ -1,5 +1,6 @@
 class FunController < ApplicationController
   def party
-    @party_message = "Wooo hooo time to  party!!!"
+    @name = params[:name].downcase.capitalize
+    @party_message = "Wooo hooo time to party #{@name}!!!"
   end
 end
