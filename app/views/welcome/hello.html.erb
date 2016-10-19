@@ -12,4 +12,14 @@
   <%= image_tag ("giphy") %>
   </div>
 </div>
-<%= link_to "Time to Party", fun_party_path %>
+<div class="row text-center">
+  <div class="col-md-4">
+    <%= link_to "Party Time", fun_party_path %>
+  </div>
+  <div class="col-md-4">
+    <%= link_to "Go party, Jon", fun_party_path(name: "Jon") %>
+  </div>
+  <div class="col-md-4">
+    <%= link_to "Time to party, Marco", fun_party_path(name: "Marco") %>
+  </div>
+</div>
